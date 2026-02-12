@@ -127,3 +127,23 @@ details[open] > summary .icon {
     text-decoration: underline;
     font-family: sans-serif;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #808080;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 20px;
+    display: none;
+    z-index: 999;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
