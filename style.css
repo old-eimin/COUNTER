@@ -1,0 +1,129 @@
+h1{
+  color: gray;  
+  text-align: center;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+#total-area{
+  color: gray;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.group {
+    color: gray;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.main-container{
+    color: gray;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.main-summary {
+    font-size: 1.2rem;
+    padding: 10px;/
+}
+
+.main-container[open] .main-summary .icon {
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.main-box {
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid #808080;
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto; margin-right: auto;
+    box-sizing: border-box;
+
+}
+
+.group {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.icon {
+    display: inline-block;
+    transition: transform 0.2s;
+    width: 1.5rem;
+    text-align: center;
+}
+
+details[open] > summary .icon {
+    transform: rotate(45deg);
+}
+
+.group-summary {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.group:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.user-info {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-align: right;
+}
+
+/* ＋ボタンのデザイン */
+.info-summary {
+    list-style: none;
+    cursor: pointer;
+    background: #FF3000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.user-info[open] .info-summary .icon {
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.info-box {
+    margin-top: 10px;
+    padding: 15px;
+    background: white;
+    border: 2px solid #808080;
+    text-align: left;
+    width: 200px;
+    box-shadow: 5px 5px 0px #ccc;
+}
+
+.info-box a {
+    color: #808080;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
