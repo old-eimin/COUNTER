@@ -180,9 +180,7 @@ document.getElementById('share-twitter').addEventListener('click', (e) => {
     
     const getP = (n, m) => m > 0 ? Math.round((n / m) * 100) : 0;
 
-    const text = `超激数計\n\n` +
-                 `${totalN}/${totalM} ${getP(totalN, totalM)}%\n` +
-                 `常設${normalN}/${normalM} ${getP(normalN, normalM)}%\n` +
+    const text = `${totalN}/${totalM} ${getP(totalN, totalM)}%\n` +
                  `ﾀﾞｲﾅ${aN}/${aM} ${getP(aN, aM)}%\n` +
                  `ﾊﾞｻﾗ${bN}/${bM} ${getP(bN, bM)}%\n` +
                  `ｷﾞｬﾙｽﾞ${cN}/${cM} ${getP(cN, cM)}%\n` +
@@ -194,8 +192,7 @@ document.getElementById('share-twitter').addEventListener('click', (e) => {
                  `ﾙｶﾞ族${iN}/${iM} ${getP(iN, iM)}%\n` +
                  `ｾﾞｳｽ${jN}/${jM} ${getP(jN, jM)}%\n` +
                  `ｴﾚﾋﾟｸ${kN}/${kM} ${getP(kN, kM)}%\n` +
-                 `ｺﾗﾎﾞ${collabN}/${collabM} ${getP(collabN, collabM)}%\n\n` +
-                 `#にゃんこ大戦争`;
+                 `ｺﾗﾎﾞ${collabN}/${collabM} ${getP(collabN, collabM)}%\n\n`;
 
     const url = window.location.href;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
