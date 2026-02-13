@@ -128,7 +128,8 @@ details[open] > summary .icon {
     border: 2px solid #808080;
     text-align: left;
     width: 200px;
-    box-shadow: 5px 5px 0px #ccc;
+    font-family: sans-serif;
+    color: #808080;    
 }
 
 .info-box a {
