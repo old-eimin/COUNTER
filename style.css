@@ -72,7 +72,7 @@ summary::-webkit-details-marker {
     padding-bottom: 10px;
 }
 
-.icon {
+.icon {   
     display: inline-block;
     transition: transform 0.2s;
     width: 1.5rem;
@@ -187,4 +187,37 @@ details[open] > summary .icon {
     font-family: sans-serif;
     margin: 0;
     font-size: 12px;
+}
+
+.transport-summary{
+    color: gray;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+    padding: 10px;/    
+}
+
+.transport-summary::-webkit-details-marker {
+    display: none;
+}
+
+.transport-icon{    display: inline-block;
+    transition: transform 0.2s;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.share-details[open] .transport-summary .transport-icon {
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.transport-icon{
+    margin-top: -27px;
+}
+
+.transport-summary p{
+    margin-top: -11px;
 }
