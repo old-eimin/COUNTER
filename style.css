@@ -212,10 +212,6 @@ body {
         display: none;
         z-index: 999;
     }
-
-    #back-to-top:hover {
-        background-color: #555;
-    }
 /*fn*/
 
 /*共有*/
