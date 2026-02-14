@@ -298,6 +298,9 @@ body {
 .group {
     overflow: hidden;
     transition: all 0.1s ease-out;
+    will-change: contents; 
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 details {
