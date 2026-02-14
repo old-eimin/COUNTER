@@ -294,3 +294,8 @@ body {
         }
     /*fn*/
 /*fn*/
+
+/*バグ改善*/
+.group {
+    overflow: hidden;
+}
