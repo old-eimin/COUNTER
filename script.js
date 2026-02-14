@@ -258,15 +258,9 @@ document.querySelectorAll('.group').forEach(group => {
 
 document.getElementById('reset-button').addEventListener('click', () => {
     if (confirm('保存したデータをすべて消去してリセットしますか？')) {
-        // 1. ブラウザの保存データを削除
         localStorage.removeItem('nyankoCheckerData');
-        
-        // 2. すべてのチェックボックスを外す
         document.querySelectorAll('.target').forEach(cb => cb.checked = false);
-        
-        // 3. 表示（％とか）を更新
-        updateDisplays();
-        
+        updateDisplays(); 
         alert('リセットしました');
     }
 });
