@@ -291,51 +291,51 @@ body {
 /*fn*/
 
 /*ゴミ箱*/
-.reset-btn {
-    background: #808080;
-    border: none;
-    border-radius: 4px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    margin: 20px auto;
-}
+    .reset-btn {
+        background: #808080;
+        border: none;
+        border-radius: 4px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        margin: 20px auto;
+    }
 
-.reset-btn:hover {
-    background: #FF3000;
-}
+    .reset-btn:hover {
+        background: #FF3000;
+    }
 
-.trash-bin {
-    width: 14px;
-    height: 16px;
-    position: relative;
-    border: 2px solid #fff;
-    border-top: none;
-    border-radius: 0 0 2px 2px;
-}
+    .trash-bin {
+        width: 14px;
+        height: 16px;
+        position: relative;
+        border: 2px solid #fff;
+        border-top: none;
+        border-radius: 0 0 2px 2px;
+    }
 
-.trash-lid {
-    width: 18px;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    top: -4px;
-    left: -2.1px;
-    border-radius: 1px;
-}
+    .trash-lid {
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: -4px;
+        left: -2.05px;
+        border-radius: 1px;
+    }
 
-.trash-lid::before {
-    content: '';
-    width: 6px;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    top: -3px;
-    left: 6px;
-    border-radius: 1px 1px 0 0;
-}
+    .trash-lid::before {
+        content: '';
+        width: 6px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: -3px;
+        left: 6px;
+        border-radius: 1px 1px 0 0;
+    }
 /*fn*/
