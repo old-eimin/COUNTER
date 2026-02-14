@@ -238,22 +238,25 @@
             display: flex;
             align-items: center;
             justify-content: center; 
-            gap: 10px;
+            gap: 2px;
             padding: 10px;
             cursor: pointer;
             color: gray;
             font-size: 1.2rem;
         }
 
-        .transport-icon, .transport-summary p {
-            margin: 0 !important; 
+        .transport-icon{
+            margin-top: -33px;
+        }
+        .transport-summary p {
+            margin-top: -15px;
         }
 
         .a-box {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap: 40px;
+            gap: 10px;
             padding: 20px;
         }
     /*fn*/
