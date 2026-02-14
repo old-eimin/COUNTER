@@ -303,3 +303,7 @@ details {
     display: block;
     width: 100%;
 }
+
+.group:not([open]) .content {
+    display: none;
+}
