@@ -206,7 +206,6 @@ body {
         height: 50px;
         background-color: var(--text-color);
         color: var(--bg-color);
-        border: 2px solid var(--text-color);
         cursor: pointer;
         font-family: 'DotGothic16', sans-serif;
         font-size: 20px;
@@ -298,4 +297,9 @@ body {
 /*バグ改善*/
 .group {
     overflow: hidden;
+}
+
+details {
+    display: block;
+    width: 100%;
 }
