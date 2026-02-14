@@ -289,21 +289,3 @@ body {
         }
     /*fn*/
 /*fn*/
-
-/*バグ改善*/
-.group {
-    overflow: hidden;
-    transition: all 0.1s ease-out;
-    will-change: contents; 
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-details {
-    display: block;
-    width: 100%;
-}
-
-.group:not([open]) .content {
-    display: none;
-}

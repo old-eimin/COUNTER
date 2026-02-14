@@ -243,3 +243,15 @@ document.getElementById('share-twitter-a').addEventListener('click', (e) => {
     
     window.open(twitterUrl, '_blank');
 });
+
+document.querySelectorAll('.group').forEach(group => {
+    group.addEventListener('toggle', () => {
+        updateDisplays();
+        
+        if (!group.open) {
+            group.style.display = 'none';
+            group.offsetHeight;
+            group.style.display = 'block';
+        }
+    });
+});
