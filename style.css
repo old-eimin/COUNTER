@@ -1,12 +1,32 @@
+/*ダークモード*/
+:root {
+    --bg-color: #ffffff;
+    --text-color: #808080;
+    --border-color: #808080;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #d1d1d1;
+        --border-color: #444444;
+    }
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
 /*テキスト設定*/
     h1{
-    color: gray;  
+    color: var(--text-color);  
     text-align: center;
     font-family: 'DotGothic16', sans-serif;
     }
 
     h2{
-        color: gray;
+        color: var(--text-color);
         text-align: center;
         font-family: sans-serif;
         font-size: 0.8rem;
@@ -15,19 +35,19 @@
     }
 
     #total-area{
-    color: gray;
+    color: var(--text-color);
     text-align: center;
     font-family: sans-serif;
     }
 
     .group {
-        color: gray;
+        color: var(--text-color);
         text-align: center;
         font-family: sans-serif;
     }
 
     .main-container{
-        color: gray;
+        color: var(--text-color);
         text-align: center;
     }
 
@@ -37,11 +57,11 @@
         flex-direction: column;
         gap: 8px;
         font-family: sans-serif;
-        color: gray;
+        color: var(--text-color);
     }
 
     .x-transport p{
-        color: gray;
+        color: var(--text-color);
         font-family: sans-serif;
         font-size: 10px;
         margin-top: -1px;
@@ -49,7 +69,9 @@
 
     .transport-summary p{
         font-family: sans-serif;
+        color: var(--text-color);
     }
+    
 /*fn*/
 
 /*キャラ選択タブ*/
@@ -70,7 +92,7 @@
     .main-box {
         margin-top: 10px;
         padding: 20px;
-        border: 2px solid #808080;
+        border: 2px solid var(--border-color);
         max-width: 500px;
         width: 100%;
         margin-left: auto; 
@@ -160,16 +182,16 @@
     .info-box {
         margin-top: 10px;
         padding: 15px;
-        background: white;
-        border: 2px solid #808080;
+        background: var(--bg-color);
+        border: 2px solid var(--border-color);
         text-align: left;
         width: 200px;
         font-family: sans-serif;
-        color: #808080;    
+        color: var(--text-color);    
     }
 
     .info-box a {
-        color: #808080;
+        color: var(--text-color);
         text-decoration: underline;
         font-family: sans-serif;
     }
@@ -182,9 +204,9 @@
         right: 20px;
         width: 50px;
         height: 50px;
-        background-color: #808080;
-        color: #fff;
-        border: 2px solid #fff;
+        background-color: var(--text-color);
+        color: var(--bg-color);
+        border: 2px solid var(--text-color);
         cursor: pointer;
         font-family: 'DotGothic16', sans-serif;
         font-size: 20px;
@@ -205,7 +227,7 @@
         align-items: center;
         width: 35px;
         height: 35px;
-        background-color: #fff;
+        background-color: var(--bg-color);
         border-radius: 5px;
         transition: all 0.3s ease;
         overflow: hidden;
@@ -222,7 +244,7 @@
         align-items: center;
         width: 35px;
         height: 35px;
-        background-color: #fff;
+        background-color: var(--bg-color);
         border-radius: 5px;
         transition: all 0.3s ease;
         overflow: hidden;
@@ -242,15 +264,17 @@
             gap: 2px;
             padding: 10px;
             cursor: pointer;
-            color: gray;
+            color: var(--border-color);
             font-size: 1.2rem;
         }
 
         .transport-icon{
             margin-top: -33px;
+            color: var(--text-color);
         }
         .transport-summary p {
             margin-top: -15px;
+            color: var(--text-color);
         }
 
         .a-box {
@@ -265,8 +289,8 @@
     /*アイコンと字配置*/
         .x-transport {
             display: flex;
-            flex-direction: column; /* アイコンの下に文字 */
-            align-items: center;    /* センター揃え */
+            flex-direction: column;
+            align-items: center;
         }
     /*fn*/
 /*fn*/
