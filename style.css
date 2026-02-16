@@ -212,10 +212,9 @@ body {
         right: 20px;
         width: 50px;
         height: 50px;
-        background-color: var(--text-color);
         color: var(--bg-color);
         cursor: pointer;
-        font-family: 'DotGothic16', sans-serif;
+        font-family: sans-serif;
         font-size: 20px;
         display: none;
         z-index: 999;
