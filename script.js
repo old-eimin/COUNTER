@@ -1,17 +1,23 @@
 const saveData = () => {
     const checkboxes = document.querySelectorAll('.target');
-    const states = Array.from(checkboxes).map(cb => cb.checked);
-    localStorage.setItem('nyankoCheckerData', JSON.stringify(states));
+    const data = {};
+    checkboxes.forEach(cb => {
+        if (cb.id) {
+            data[cb.id] = cb.checked;
+        }
+    });
+    localStorage.setItem('nyankoCheckerData', JSON.stringify(data));
 };
 
 const loadData = () => {
     const saved = localStorage.getItem('nyankoCheckerData');
     if (saved) {
-        const states = JSON.parse(saved);
+        const data = JSON.parse(saved);
         const checkboxes = document.querySelectorAll('.target');
-        checkboxes.forEach((cb, index) => {
-            if (states[index] !== undefined) {
-                cb.checked = states[index];
+        checkboxes.forEach(cb => {
+            // 保存データの中にそのIDがあれば、その値（true/false）を反映
+            if (cb.id && data[cb.id] !== undefined) {
+                cb.checked = data[cb.id];
             }
         });
     }
@@ -81,6 +87,7 @@ backToTopBtn.addEventListener('click', () => {
     });
 });
 
+/*共有*/
 document.getElementById('share-twitter').addEventListener('click', (e) => {
     e.preventDefault();
 
@@ -199,6 +206,7 @@ document.getElementById('share-twitter').addEventListener('click', (e) => {
     
     window.open(twitterUrl, '_blank');
 });
+/*fn*/
 
 document.getElementById('share-twitter-a').addEventListener('click', (e) => {
     e.preventDefault();
