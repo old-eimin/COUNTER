@@ -15,7 +15,6 @@ const loadData = () => {
         const data = JSON.parse(saved);
         const checkboxes = document.querySelectorAll('.target');
         checkboxes.forEach(cb => {
-            // 保存データの中にそのIDがあれば、その値（true/false）を反映
             if (cb.id && data[cb.id] !== undefined) {
                 cb.checked = data[cb.id];
             }
@@ -244,6 +243,7 @@ document.getElementById('share-twitter-a').addEventListener('click', (e) => {
                  `総合:${totalN}/${totalM} [${getP(totalN, totalM)}%]\n` +
                  `常設:${normalN}/${normalM} [${getP(normalN, normalM)}%]\n` +
                  `コラボ:${collabN}/${collabM} [${getP(collabN, collabM)}%]\n\n` +
+                 `(新ver)https://mimi-sansan.github.io/battle-cat.uber-rare.counter/` +
                  `#にゃんこ大戦争 #キャラ数カウンター`;
 
     const url = window.location.href;
